@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+fieldset, legend{
+    background-color: rgb(231, 231, 231);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+fieldset{
+    width: 400px;
+}
+
+legend{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.bouton{
+    display: flex;
+    justify-content: center;
+}
+
+/* input, textarea, select{
+    width: 200px;
+} */
+
+/* :required{
+    background-color: rgb(255, 0, 0);
+} */
