@@ -14,24 +14,30 @@
     <form method="get">
 
         <section>
+
             <fieldset>
+
                 <legend>Informations Personnelles</legend>
 
+                <!-- firstmane -->
                 <div>
                     <label for="firstmane">Prénom* :</label><br>
                     <input type="text" placeholder="prénom" name="firstname" id="firstmane" autofocus required><br>
                 </div>
 
+                <!-- lastname -->
                 <div>
                     <label for="lastname">Nom* :</label><br>
                     <input type="text" placeholder="nom" name="lastname" id="lastname" required><br>
                 </div>
 
+                <!-- age -->
                 <div>
                     <label for="age">Age* :</label><br>
-                    <input type="text" name="age" id="age" pattern="[123456789][0123456789]" required><br>
+                    <input type="number" name="age" id="age" min="18" max="99" required><br>
                 </div>
 
+                <!-- sexe -->
                 <div>
                     Sexe :<br>
                     <input type="radio" name="sex" id="man" value="man">
@@ -42,21 +48,25 @@
                     <label for="other">Autre</label><br>
                 </div>
 
+                <!-- email -->
                 <div>
                     <label for="email">Adresse mail* :</label><br>
                     <input type="email" name="email" id="email" required><br>
                 </div>
 
+                <!-- adress -->
                 <div>
                     <label for="adress">Adresse postale: </label><br>
                     <textarea name="adress" id="adress" placeholder="ajouter votre adresse"></textarea><br>
                 </div>
 
+                <!-- codepost -->
                 <div>
                     <label for="codePost">Code postale :</label><br>
                     <input type="text" name="codePost" id="codePost" pattern="[0-9]{5}" placeholder="12 345" title="un nombre a 5 chiffres est attendu"><br>
                 </div>
 
+                <!-- city -->
                 <div>
                     <label for="city">Ville :</label><br>
                     <select id="city" name="city">
@@ -71,10 +81,14 @@
                         <option value="istanbul">Istanbul</option>
                     </select><br>
                 </div>
+
             </fieldset>
 
             <fieldset>
+
                 <legend>Informations Complémentaires</legend>
+
+                <!-- job -->
                 <div>
                     <label for="job">Métier :</label><br>
                     <select id="job" name="job">
@@ -87,9 +101,10 @@
                     </select><br>
                 </div>
 
+                <!-- nationalité -->
                 <div>
-                    <label for="nationalité">Nationalité :</label><br>
-                    <select id="nationalité" name="nationalité">
+                    <label for="nationalite">Nationalité :</label><br>
+                    <select id="nationalite" name="nationalite">
                         <option selected>---</option>
                         <option value="francais">francais(e)</option>
                         <option value="libanais">libanais(e)</option>
@@ -99,11 +114,13 @@
                     </select><br>
                 </div>
 
+                <!-- birthdate -->
                 <div>
                     <label for="birthdate">Date de naissance :</label><br>
                     <input type="date" name="birthdate" id="birthdate" max="2015-02-01" title="vous devez avoir 18 ans"><br>
                 </div>
 
+                <!-- birthcountry -->
                 <div>
                     <label for="birthcountry">Pays de naissance :</label><br>
                     <select id="birthcountry" name="birthcountry">
@@ -116,31 +133,36 @@
                     </select><br>
                 </div>
 
+                <!-- numSecu -->
                 <div>
                     <label for="numSecu">Numéro de sécurité social :</label><br>
                     <input type="text" placeholder="1 22 33 44 555 666 77" name="numSecu" id="numSecu" pattern="[12]{1}[0-9]{14}" title="un nombre a 15 chiffres commencant par 1 ou 2 est attendu"><br>
                 </div>
 
+                <!-- numPasseport -->
                 <div>
                     <label for="numPasseport">Numéro de passeport :</label><br>
                     <input type="text" placeholder="12 AZ 34567" name="numPasseport" id="numPasseport" pattern="[0-9]{2}[a-zA-Z]{2}[0-9]{5}" title="le numéro de passeport est composé de 2 chiffres, 2 lettres puis 5 chiffres"><br>
                 </div>
 
+                <!-- dateDelivPasseport -->
                 <div>
                     <label for="dateDelivPasseport">Date de délivrance de votre passeport :</label><br>
                     <input type="date" name="dateDelivPasseport" id="dateDelivPasseport" min="2013-02-01" title="un passeport est valide pendant 10 ans"><br>
                 </div>
 
+                <!-- dateValidPasseport -->
                 <div>
                     <label for="dateValidPasseport">Date de validité de votre passeport :</label><br>
                     <input type="date" name="dateValidPasseport" id="dateValidPasseport" max="2033-02-01" title="un passeport est valide pendant 10 ans"><br>
                 </div>
+
             </fieldset>
 
         </section>
 
-        <label class="bouton">
-            <button type="submit" name="submit">Envoyer ma demande</button>
+        <label>
+            <button class="bouton" type="submit" name="submit">Envoyer ma demande</button>
         </label>
 
     </form>
